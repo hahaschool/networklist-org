@@ -124,7 +124,7 @@ function Home({ changeTheme, theme }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Chainlist</title>
+        <title>Chainlist @ 255DAO</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
@@ -134,17 +134,9 @@ function Home({ changeTheme, theme }) {
             <div className={ classes.copyCentered }>
               <Typography variant='h1' className={ classes.chainListSpacing }><span className={ classes.helpingUnderline }>Chainlist</span></Typography>
               <Typography variant='h2' className={ classes.helpingParagraph }>Helping users connect to EVM powered networks</Typography>
-              <Typography className={classes.subTitle}>Chainlist is a list of EVM networks. Users can use the information to connect their wallets and Web3 middleware providers to the appropriate Chain ID and Network ID to connect to the correct chain.</Typography>
-              <Button
-                size='large'
-                color='primary'
-                variant='contained'
-                className={ classes.addNetworkButton }
-                onClick={ addNetwork }
-                endIcon={<AddIcon />}
-              >
-                <Typography className={ classes.buttonLabel }>Add Your Network</Typography>
-              </Button>
+              <Typography variant='h2' className={ classes.helpingParagraph }>添加各种EVM公链到钱包</Typography>
+              <Typography className={classes.subTitle}>在搜索框输入需要添加的公链，然后链接钱包即可。</Typography>
+              <Typography className={classes.subTitle}>This copy of Chainlist is operated by 255DAO.</Typography>
               <div className={ classes.socials }>
                 <a className={ `${classes.socialButton}` } href='https://github.com/antonnell/networklist-org.git' target='_blank' rel="noopener noreferrer" >
                   <svg version="1.1" width="24" height="24" viewBox="0 0 24 24">
@@ -165,7 +157,7 @@ function Home({ changeTheme, theme }) {
                       fullWidth
                       className={ classes.searchContainer }
                       variant="outlined"
-                      placeholder="ETH, Fantom, ..."
+                      placeholder="ETH, Moonbeam, ..."
                       value={ search }
                       onChange={ onSearchChanged }
                       InputProps={{
