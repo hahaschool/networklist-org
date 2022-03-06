@@ -154,7 +154,7 @@ function Header(props) {
         onClick={ onAddressClicked }
         >
         { account && account.address && <div className={ `${classes.accountIcon} ${classes[renderProviderLogo()]}` }></div>}
-        <Typography variant='h5'>{ (account && account.address)? formatAddress(account.address) : 'Connect Wallet' }</Typography>
+        <Typography variant='h5'>{ (account && account.address)? formatAddress(account.address) : '链接钱包' }</Typography>
       </Button>
     </div>
   )

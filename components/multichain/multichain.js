@@ -16,7 +16,7 @@ export default function Multichain({ closeMultichain }) {
   const [ checked, setChecked ] = useState(false)
 
   const navigateToMultichain = () => {
-    window.open("https://multichain.xyz", "_blank")
+    window.open("https://t.me/dao255", "_blank")
   }
 
   const handleChange = () => {
@@ -71,8 +71,8 @@ export default function Multichain({ closeMultichain }) {
     <Paper elevation={ 1 } className={ classes.chainContainer } key={ 'multichain' } >
       <ThemeProvider theme={theme}>
         <div className={ classes.topInfo }>
-          <img src='/multichain-logo.png' width={ 126 } height={ 126 } className={ classes.avatar } />
-          <Typography variant='subtitle1' className={ classes.descriptionText} align='center' >Manage over 120 tokens and multi-chain assets with fully supported cross chain transactions.</Typography>
+          <img src='/255dao_compact_small.jpg' width={ 126 } height={ 126 } className={ classes.avatar } />
+          <Typography variant='subtitle1' className={ classes.descriptionText} align='center' >选择 255 DAO Moonbeam 收集人节点质押您的 GLMR，享受安全稳定的高收益</Typography>
           <Button
             className={ classes.tryButton }
             variant='contained'
@@ -81,20 +81,7 @@ export default function Multichain({ closeMultichain }) {
             color='secondary'
             endIcon={<ArrowForwardIcon />}
           >
-            <Typography className={ classes.buttonLabel }>Try out <b>multichain.xyz</b></Typography>
-          </Button>
-        </div>
-        <div className={ classes.bottomActions }>
-          <FormControlLabel
-            control={<Checkbox checked={ checked } onChange={handleChange} name="checked" />}
-            label="Don't show again"
-          />
-          <Button
-            size='small'
-            onClick={ () => { closeMultichain(checked) } }
-            endIcon={<CloseIcon />}
-          >
-            <Typography className={ classes.buttonLabel }>Close</Typography>
+            <Typography className={ classes.buttonLabel }>加入 255 DAO 质押社区</Typography>
           </Button>
         </div>
       </ThemeProvider>

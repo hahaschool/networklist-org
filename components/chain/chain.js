@@ -78,13 +78,13 @@ export default function Chain({ chain }) {
 
     if(account && account.address) {
       const providerTextList = {
-        Metamask: 'Add to Metamask',
-        imToken: 'Add to imToken',
-        Wallet: 'Add to Wallet'
+        Metamask: '添加到 Metamask (小狐狸)',
+        imToken: '添加到 imToken',
+        Wallet: '添加到钱包'
       }
       return providerTextList[getProvider()]
     } else {
-      return 'Connect wallet'
+      return '链接钱包'
     }
 
   }
@@ -120,7 +120,7 @@ export default function Chain({ chain }) {
           <Typography variant='h5'>{ chain.chainId }</Typography>
         </div>
         <div className={ classes.dataPoint }>
-          <Typography variant='subtitle1' color='textSecondary' className={ classes.dataPointHeader}>Currency</Typography>
+          <Typography variant='subtitle1' color='textSecondary' className={ classes.dataPointHeader}>代币符号</Typography>
           <Typography variant='h5'>{ chain.nativeCurrency ? chain.nativeCurrency.symbol : 'none' }</Typography>
         </div>
       </div>
